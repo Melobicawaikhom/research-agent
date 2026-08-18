@@ -1,0 +1,3 @@
+HOD monthly salary is 150000 rupees.
+Assistant Professor monthly salary is 80000 rupees.
+This information is confidential and only for admin use.
