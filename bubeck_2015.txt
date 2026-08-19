@@ -1,0 +1,8 @@
+Title: Convex Optimization - Algorithms and Complexity (Bubeck, 2015)
+Source: arXiv:1405.4980
+
+Summary: This monograph by Sebastien Bubeck presents the main complexity theorems in convex optimization and their corresponding algorithms. It starts from black-box optimization theory and progresses to structural and stochastic optimization. The work is strongly influenced by Nesterov's foundational research and covers cutting plane methods and accelerated gradient descent schemes.
+
+Key topics: gradient descent, mirror descent, Frank-Wolfe algorithm, dual averaging, FISTA for optimizing a sum of smooth and non-smooth terms, saddle-point mirror prox, and interior point methods.
+
+Relevance to machine learning: These algorithms form the mathematical backbone of how modern ML models are trained, especially for convex loss functions where global optima can be guaranteed.

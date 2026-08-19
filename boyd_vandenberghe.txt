@@ -1,0 +1,8 @@
+Title: Convex Optimization (textbook)
+Authors: Stephen Boyd and Lieven Vandenberghe (Cambridge University Press, 2004)
+
+Summary: This is a foundational textbook covering convex sets, convex functions, and convex optimization problems, including how to recognize convex problems and solve them efficiently. It covers duality theory, which allows deriving lower bounds and alternative problem formulations, and provides many practical algorithms.
+
+Key topics: convex sets and functions, duality theory, interior-point methods, and applications across engineering, statistics, and machine learning.
+
+Relevance to machine learning: This text underlies much of the mathematical theory used to justify why certain ML training objectives (like logistic regression or SVMs) can be solved reliably and efficiently — because they are convex optimization problems with guaranteed global optima.

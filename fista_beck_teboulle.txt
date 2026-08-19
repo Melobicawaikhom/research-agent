@@ -1,0 +1,8 @@
+Title: A Fast Iterative Shrinkage-Thresholding Algorithm (FISTA)
+Authors: Amir Beck and Marc Teboulle (2009)
+
+Summary: FISTA is an accelerated version of the Iterative Shrinkage-Thresholding Algorithm (ISTA), designed to solve optimization problems that combine a smooth convex function with a simple non-smooth term (common in sparse recovery and regularized regression, such as L1-regularized least squares / LASSO).
+
+Key idea: FISTA applies Nesterov-style acceleration to ISTA, improving the convergence rate from O(1/k) to O(1/k^2), while keeping each iteration's computational cost about the same as plain ISTA.
+
+Relevance to machine learning: FISTA is widely used in sparse coding, compressed sensing, and regularized regression problems where the objective function is a sum of a smooth data-fitting term and a non-smooth sparsity-inducing penalty (like L1 norm).

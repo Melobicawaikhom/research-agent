@@ -1,0 +1,8 @@
+Title: An Algorithm for Quadratic Programming (Frank-Wolfe method / Conditional Gradient method)
+Authors: Marguerite Frank and Philip Wolfe (1956)
+
+Summary: The Frank-Wolfe algorithm, also known as the conditional gradient method, solves constrained convex optimization problems by iteratively moving toward a point that minimizes a linear approximation of the objective function within the constraint set, rather than projecting onto the constraint set directly (as projected gradient descent does).
+
+Key idea: Avoids expensive projection steps required by other constrained optimization methods, making it attractive when the constraint set has a simple linear optimization oracle (e.g., matrices with bounded nuclear norm, or probability simplex constraints).
+
+Relevance to machine learning: Frank-Wolfe methods are used in problems like matrix completion, structured sparsity, and some large-scale ML settings where projection-based methods are computationally expensive.

@@ -1,0 +1,8 @@
+Title: Nesterov's Accelerated Gradient Method
+Author: Yurii Nesterov (1983 original method, later expanded in "Introductory Lectures on Convex Optimization", 2003)
+
+Summary: Nesterov introduced an accelerated variant of gradient descent that achieves a faster theoretical convergence rate than standard gradient descent for smooth convex functions. Standard gradient descent converges at a rate of O(1/k), while Nesterov's method achieves O(1/k^2).
+
+Key idea: The method uses a "momentum" term that incorporates information from previous iterations, effectively looking ahead before computing the gradient step, rather than just using the current point.
+
+Relevance to machine learning: This method is the theoretical basis for momentum-based optimizers widely used in deep learning training, including practical variants used in modern neural network optimizers.
