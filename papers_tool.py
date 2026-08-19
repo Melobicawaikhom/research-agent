@@ -58,6 +58,6 @@ def search_papers(query: str, top_k: int = 3) -> list[dict]:
 
 # Quick standalone test
 if __name__ == "__main__":
-    results = search_papers("when is the DBMS exam")
+    results = search_papers("what is Nesterov's accelerated gradient method")
     for r in results:
         print(r)
