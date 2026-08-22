@@ -22,33 +22,29 @@ def _make_id():
 def normalize_paper_result(r: dict) -> dict:
     return {
         "id": _make_id(),
-        "text": r.get("chunk") or r.get("text", ""),
+        "text": r.get("text", ""),
         "source_type": "paper",
-        "source_id": r.get("doc_id", "unknown"),
-        "score": r.get("score"),
-        "meta": {"title": r.get("title", "")},
+        "source_id": r.get("source", "unknown"),
+        "score": r.get("relevance_score"),
+        "meta": {},
     }
-
-
 def normalize_db_result(r: dict) -> dict:
     return {
         "id": _make_id(),
-        "text": r.get("row_summary") or r.get("text", ""),
+        "text": r.get("text", ""),
         "source_type": "database",
-        "source_id": str(r.get("id", "unknown")),
-        "score": None,
-        "meta": {"table": r.get("table", "")},
+        "source_id": r.get("source", "unknown"),
+        "score": r.get("relevance_score"),
+        "meta": {},
     }
-
-
 def normalize_web_result(r: dict) -> dict:
     return {
         "id": _make_id(),
         "text": r.get("text", ""),
         "source_type": "web",
-        "source_id": r.get("url", "unknown"),
-        "score": None,
-        "meta": {"title": r.get("title", "")},
+        "source_id": r.get("source", "unknown"),
+        "score": r.get("relevance_score"),
+        "meta": {},
     }
 
 
